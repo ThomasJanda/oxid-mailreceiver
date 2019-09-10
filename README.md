@@ -4,6 +4,8 @@
 
 Send all mails to a defined mail address or add to all mails a BCC.
 
+This extension was created for Oxid 6.x.
+
 ## Install
 
 1. Copy files into following directory
@@ -12,11 +14,11 @@ Send all mails to a defined mail address or add to all mails a BCC.
         
 2. Add to composer.json at shop root
   
-    "autoload": {
-        "psr-4": {
-            "rs\\mailreceiver\\": "./source/modules/rs/mailreceiver"
-        }
-    },
+        "autoload": {
+            "psr-4": {
+                "rs\\mailreceiver\\": "./source/modules/rs/mailreceiver"
+            }
+        },
 
 3. Refresh autoloader files with composer in the oxid root directory.
 
