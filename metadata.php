@@ -27,5 +27,11 @@ $aModule = array(
             'type' => 'str',
             'value' => ''
         ),
+        array(
+            'group' => 'cpmail_settings',
+            'name' => 'cpmail_replace_profihost_fix',
+            'type' => 'bool',
+            'value' => false
+        ),
     )
 );

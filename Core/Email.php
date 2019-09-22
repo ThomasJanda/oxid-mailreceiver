@@ -7,6 +7,26 @@ namespace rs\mailreceiver\Core;
  */
 class Email extends Email_parent
 {
+
+    /**
+     * Email constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+
+        $myConfig = $this->getConfig();
+        $bFix = $myConfig->getConfigParam("cpmail_replace_profihost_fix");
+        if($bFix)
+            $this->set('Encoding','base64');
+    }
+
+    /**
+     * @param null $sAddress
+     * @param null $sName
+     *
+     * @return mixed
+     */
     public function setRecipient($sAddress = null, $sName = null)
     {
         $myConfig = $this->getConfig();
